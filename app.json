@@ -10,14 +10,25 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "platforms": ["ios","android"],
     "updates": {
       "fallbackToCacheTimeout": 0
     },
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "package": "com.lottorich",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-3940256099942544/6300978111" // sample id, replace with your own
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "org.reactjs.native.example.LottoRich",
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-3940256099942544/6300978111" // sample id, replace with your own
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
